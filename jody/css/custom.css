@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Maquette";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Light";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Light Italic";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-LightItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Medium";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Medium Italic";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Bold";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Bold Italic";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Black";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Maquette Black Italic";
+  src: url('../fonts/../fonts/maquette/ARSMaquettePro-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Guardian";
+  src: url('../fonts/guardian/GuardianEgyp-LightIt.otf') format('opentype'), url('../fonts/guardian/GuardianEgyp-LightIt-Web.svg') format('svg'), url('../fonts/guardian/GuardianEgyp-LightIt-Web.ttf') format('truetype'), url('../fonts/guardian/GuardianEgyp-LightIt-Web.woff') format('woff'), url('../fonts/guardian/GuardianEgyp-LightIt-Web.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "Guardian SemiBold";
+  src: url('../fonts/guardian/GuardianEgyp-Semibold.otf') format('opentype'), url('../fonts/guardian/GuardianEgyp-Semibold-Web.svg') format('svg'), url('../fonts/guardian/GuardianEgyp-Semibold-Web.ttf') format('truetype'), url('../fonts/guardian/GuardianEgyp-Semibold-Web.woff') format('woff'), url('../fonts/guardian/GuardianEgyp-Semibold-Web.eot') format('embedded-opentype');
+}
+
+/* Change whether or not you include browser prefixes */
+/* line 2, ../sass/custom.sass */
+body {
+  background: #d6d6d6;
+}
+
+/* line 7, ../sass/custom.sass */
+.top-bar-menu {
+  background: #67abdb;
+}
+/* line 9, ../sass/custom.sass */
+.top-bar-menu .top-bar-section li a {
+  background: #67abdb;
+  color: #397da9;
+}
+/* line 12, ../sass/custom.sass */
+.top-bar-menu .top-bar-section li a.active {
+  color: white;
+}
+/* line 14, ../sass/custom.sass */
+.top-bar-menu .top-bar-section li a:hover {
+  background: #67abdb;
+  color: white;
+}
+
+/* line 18, ../sass/custom.sass */
+.top-bar-section li.last a {
+  background: #bd172b;
+  color: white;
+}
+/* line 21, ../sass/custom.sass */
+.top-bar-section li.last a:hover {
+  background: #af1528;
+}
+
+/* line 24, ../sass/custom.sass */
+.top-bar {
+  background: #67abdb;
+}
+
+/* line 27, ../sass/custom.sass */
+.top-bar-menu .top-bar-section li a {
+  color: #397da9;
+}
+
+/* line 29, ../sass/custom.sass */
+.top-bar-section li.last a {
+  background: #bd172b;
+}
+
+/* line 36, ../sass/custom.sass */
+.main.row {
+  background: #f1eeee url('../images/bg-header-default.jpg?1388873551') scroll no-repeat 0 em(45);
+}
+
+/* line 38, ../sass/custom.sass */
+#main {
+  background: white;
+  background: #f1eeee url('../images/bg-header-default.jpg?1388873551') scroll no-repeat 0 0px;
+}
+/* line 43, ../sass/custom.sass */
+.section-issues #main .panel-col-top, .front #main .panel-col-top {
+  min-height: em(54);
+}
+/* line 45, ../sass/custom.sass */
+.section-issues #main .panels-flexible-row-issues_page_layout-main-row,
+.section-issues #main .panels-flexible-row-issues_page_layout-1.panels-flexible-row-last, .front #main .panels-flexible-row-issues_page_layout-main-row,
+.front #main .panels-flexible-row-issues_page_layout-1.panels-flexible-row-last {
+  background: white;
+}
+
+/* line 49, ../sass/custom.sass */
+body.node-type-about-page #main.columns {
+  background: white url('../images/bg-header-default.jpg?1388873551') scroll no-repeat 0 0;
+}
+
+/* line 52, ../sass/custom.sass */
+body.layout-issue-section .main-wrapper #main {
+  background: transparent url('../images/bg-header-default.jpg?1388873551') scroll no-repeat 0 0;
+}
+
+/* line 60, ../sass/custom.sass */
+.issues-col-right #feature-donate-right a {
+  background: white url('../images/bg-sidebar-donate.png?1388873551') scroll no-repeat 0 0;
+}
+/* line 63, ../sass/custom.sass */
+.issues-col-right #feature-petition-right a {
+  background: white url('../images/bg-sidebar-signup.png?1388873551') scroll no-repeat 0 0;
+}
+
+/* line 70, ../sass/custom.sass */
+.node-type-iframe-form h2 {
+  color: #67abdb;
+}
+/* line 72, ../sass/custom.sass */
+.node-type-iframe-form #main {
+  background: url('../images/bg-page-petition.jpg?1398359163') scroll no-repeat 0 0;
+}
+/* line 74, ../sass/custom.sass */
+.node-type-iframe-form article {
+  background: transparent url('../images/bg-petition-header-banner.png?1388873551') scroll no-repeat 0 0;
+}
+
+/* line 78, ../sass/custom.sass */
+.page-eform .entityform {
+  background: url('../images/bg-page-petition.jpg?1398359163') scroll no-repeat 0 0;
+}
+/* line 80, ../sass/custom.sass */
+.page-eform .entityform > div {
+  background: transparent url('../images/bg-petition-header-banner.png?1388873551') scroll no-repeat 0 0;
+  background: none;
+}
+
+/* adding id styles to separate Petition and Volunteer form backgrounds */
+/* line 85, ../sass/custom.sass */
+#petition-form-entityform-edit-form {
+  background: transparent url('../images/bg-page-petition.jpg?1398359163') scroll no-repeat 0 0;
+}
+
+/* adding id styles to separate Petition and Volunteer form backgrounds */
+/* line 91, ../sass/custom.sass */
+#volunteer-entityform-edit-form,
+form#contact-entityform-edit-form {
+  background: transparent url('../images/bg-page-volunteer.jpg?1391716950') scroll no-repeat 0 0;
+}
+
+/* line 95, ../sass/custom.sass */
+.page-eform .entityform .form-submit {
+  background: transparent url('../images/button-submite-petition.png?1388873551') scroll 0 0;
+}
+
+/* line 97, ../sass/custom.sass */
+.page-eform-submit-volunteer .entityform .form-submit {
+  background: transparent url('../images/button-submit-volunteer.png?1388873551') scroll 0 0;
+}
+
+/* line 104, ../sass/custom.sass */
+footer#footer {
+  background: #f1eeee url('../images/bg-footer-default.jpg?1388873551') scroll no-repeat 0 0;
+}
+
+/* line 109, ../sass/custom.sass */
+#drawer-all-issues .view-issues-menu .views-row .views-field-name span a {
+  text-transform: none;
+}
+
+/* line 112, ../sass/custom.sass */
+#drawer-next-issue .views-row .field-content a {
+  text-transform: none;
+}

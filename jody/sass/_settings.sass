@@ -1,0 +1,219 @@
+// Foundation Settings file
+//
+// In order to use the settings copy over the settings file
+// found in the zurb foundation github repository and then
+// recompile and preprocess the theme again.
+//
+// For a detailed list of each value and variable visit the sass settings:
+// http://foundation.zurb.com/docs/sass-settings.php
+//
+// For the latest settings.css file, it can be found here:
+// https://raw.github.com/zurb/foundation/master/scss/foundation/_settings.scss
+//
+// Be sure to check which version of foundation you're using.
+
+//============================
+// Examples:
+//============================
+// Color
+// $mainColor: #2ba6cb;
+// $secondaryColor: #e9e9e9;
+// $alertColor: #c60f13;
+// $successColor: #5da423;
+// $txtColor: #222;
+// $highlightColor: #ffff99;
+// $black: #000;
+// $white: #fff;
+// $shinyEdge: rgba(#fff, .5);
+// $darkEdge: rgba(#000, .2);
+
+
+// ARS Maquette Pro Family
+@import ../fonts/maquette/maquette
+
+// Guardian Egyp Family
+@import ../fonts/guardian/guardian
+
+/* Change whether or not you include browser prefixes */
+$experimental: true !default
+$em-base: 16px !default
+
+////////////////////////////////////////
+// Media Queries
+$small-screen: 1200px
+$medium-screen: 1200px
+$large-screen: 1200px
+
+$screen: "only screen"
+$small: "only screen and (min-width: #{$small-screen})"
+$medium: "only screen and (min-width: #{$medium-screen})"
+$large: "only screen and (min-width: #{$large-screen})"
+$landscape: "only screen and (orientation: landscape)"
+$portrait: "only screen and (orientation: portrait)"
+
+////////////////////////////////////////
+// Layout
+$row-width: 75em !default
+$column-gutter: .8125em !default
+$total-columns: 16 !default
+$target: 1
+$font-size: 16
+
+$page-background-color: #d6d6d6
+$main-row-background-color: #f1eeee
+$default-box-shadow-blur: 24px
+$default-box-shadow-color: rgba(#333333,.5)
+
+////////////////////////////////////////
+// Font Stacks
+$sans: "Maquette", Tahoma, Arial, sans-serif
+$serif: "Guardian SemiBold", Palatino, Georgia, serif
+
+////////////////////////////////////////
+// Text styles
+$color-content: #737373
+$color-byline: #464646
+
+////////////////////////////////////////
+// Form elements
+$form-field-background-color: #a5a5a5
+$form-field-border-color: $form-field-background-color
+$form-label-text-color: #787878
+
+////////////////////////////////////////
+// Header styles
+$subtext: #464646
+
+$header-font-color: #464646
+$header-link-color: #464646
+$header-background-image: "bg-header-default.jpg"
+
+$subheader-line-height: 1.4
+$subheader-font-color: $color-content
+$subheader-font-weight: 300
+$subheader-top-margin: .2em
+$subheader-bottom-margin: .5em
+
+
+////////////////////////////////////////
+// Links styles
+$primary-color: #5a9cce
+$color-link: #1e71a0
+$color-link-hover: darken(#1e71a0,5%)
+$color-link-focus: #1e71a0
+$color-link-visited: #1e71a0
+$color-link-readmore: #464646
+$anchor-text-decoration: none
+$anchor-font-color: $primary-color
+$anchor-font-color-hover: darken($primary-color, 5%)
+
+////////////////////////////////////////
+// Top Bar
+$color-network-bar: #67abdb
+$color-top-bar: #67abdb
+$color-top-bar-links: #397da9
+$top-bar-donate-background-color: #bd172b
+
+////////////////////////////////////////
+// Issues: Feature: Issues style
+$feature-text-font-color: $color-content
+$feature-link-read-more: $color-link
+$feature-title-label-font-color: #b2b0ae
+$feature-subtext-font-color: $color-content
+$feature-issue-label-font-color: #2d78a7
+$feature-text-line-height: 1.8
+$feature-subtext-line-height: 1.4
+$feature-image-readmore: "bg-feature-read-more.png"
+$feature-image-watchmore: "bg-feature-watch-more.png"
+$feature-image-donate: "bg-link-feature-donate.png"
+
+
+////////////////////////////////////////
+// Issues: Results
+$issues-taxonomy-font-color: #6cafdd
+$issues-header-font-color: #616161
+$issues-subheader-font-color: $subheader-font-color
+$issues-time-line-background-color: #ebe8e6
+$issues-donation-text: #88817e
+$issues-page-divider: #cacaca
+
+/////////////////////////////////////////////
+// Issues: Drawer
+$issue-drawer-bg-color: #bcd8ec
+$issue-drawer-link-color: #7e9aae
+$issue-drawer-link-color-light: #f0eded
+$issue-drawer-link-blue-light: #6d9ec2
+$issue-drawer-link-blue-dark: #0a3c5f
+$issue-drawer-border-gray: #777777
+$issue-drawer-gray-light: #cccccc
+$issue-drawer-gray-dark: #8e8e8e
+$issue-drawer-bg-controls: #67abdb
+
+////////////////////////////////////////
+// Sidebar
+$sidebar-link-donate: "bg-sidebar-donate.png"
+$sidebar-link-signup: "bg-sidebar-signup.png"
+$sidebar-link-readmore-image: "bg-sidebar-readmore.png"
+$sidebar-link-press-release-image: "bg-sidebar-pr.png"
+$sidebar-link-video-image: "bg-sidebar-video.png"
+$sidebar-link-readmore: $issues-header-font-color
+$sidebar-link-issue: #6cafdd
+
+
+////////////////////////////////////////
+// Deepdive
+$deepdive-icon-social: "bg-deepdive-socialmedia.png"
+
+
+////////////////////////////////////////
+// Donate styles
+$color-link-donate: #363636
+$color-link-donate-hover: #363636
+
+////////////////////////////////////////
+// Page Wrapper
+$color-page-wrapper: transparent
+$color-main-content: #ffffff
+
+////////////////////////////////////////
+// Footer Variables
+$color-footer: #999999
+$bg-footer-image: none
+$color-footer-bar: #232831
+$color-footer-copy: #ffffff
+$footer-background-color: #f1eeee
+$footer-background-image: "bg-footer-default.jpg"
+$footer-donation-image: "bg-footer-donation.png"
+$footer-donation-copy: #619bc3
+
+///////////////////////////////////////
+// Legal copy styles
+$color-legal-copy: #58585b
+$color-legal-bg: #e5dfdd
+$color-legal-border: #58585b
+
+
+///////////////////////////////////////
+// Brand styles
+$color-brand-copy: #ffffff
+
+///////////////////////////////////////
+// Draw Styles
+
+
+///////////////////////////////////////
+// Petition: styles
+$petition-page-background: "bg-page-petition.jpg"
+$petition-header-banner: "bg-petition-header-banner.png"
+$petition-form-background-color: transparent
+$petition-header-text-color: #67abdb
+
+
+///////////////////////////////////////
+// Volunteer styles
+$volunteer-page-background: "bg-page-volunteer.jpg"
+$volunteer-button-submit: "button-submit-volunteer.png"
+$form-button-submit: "button-submite-petition.png"
+
+
+

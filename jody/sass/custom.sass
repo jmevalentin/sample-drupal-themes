@@ -1,0 +1,116 @@
+@import settings
+body
+  background: $page-background-color
+
+/////////////////////////////////////////////
+// Top Bar Section: Menu
+.top-bar-menu
+  background: $color-top-bar
+  .top-bar-section li a
+    background: $color-top-bar
+    color: $color-top-bar-links
+    &.active
+      color: white
+    &:hover
+      background: $color-top-bar
+      color: white
+
+.top-bar-section li.last a
+  background: $top-bar-donate-background-color
+  color: white
+  &:hover
+    background: darken($top-bar-donate-background-color,3%)
+
+.top-bar
+  background: $color-top-bar
+
+.top-bar-menu .top-bar-section li a
+  color: $color-top-bar-links
+.top-bar-section li.last a
+  background: $top-bar-donate-background-color
+
+
+
+/////////////////////////////////////////////
+// Main: Content
+.main.row
+  background: $main-row-background-color image-url($header-background-image) scroll no-repeat 0 em(45)
+#main
+  background: $color-main-content
+  background: $main-row-background-color image-url($header-background-image) scroll no-repeat 0 0px
+  .section-issues &,
+  .front &
+    .panel-col-top
+      min-height: em(54)
+    .panels-flexible-row-issues_page_layout-main-row,
+    .panels-flexible-row-issues_page_layout-1.panels-flexible-row-last
+      background: $color-main-content
+
+body.node-type-about-page #main.columns
+  background: white image-url($header-background-image) scroll no-repeat 0 0
+
+body.layout-issue-section .main-wrapper #main
+  background: transparent image-url($header-background-image) scroll no-repeat 0 0
+
+
+/////////////////////////////////////////////
+// Issues: Sidebar
+.issues-col-right
+
+  #feature-donate-right a
+    background: white image-url($sidebar-link-donate) scroll no-repeat 0 0
+
+  #feature-petition-right a
+    background: white image-url($sidebar-link-signup) scroll no-repeat 0 0
+
+
+////////////////////////////////////////////
+// Page: petition
+.node-type-iframe-form
+  h2
+    color: $petition-header-text-color
+  #main
+    background: image-url($petition-page-background) scroll no-repeat 0 0
+  article
+    background: $petition-form-background-color image-url($petition-header-banner) scroll no-repeat 0 0
+
+.page-eform
+  .entityform
+    background: image-url($petition-page-background) scroll no-repeat 0 0
+    > div
+      background: $petition-form-background-color image-url($petition-header-banner) scroll no-repeat 0 0
+      background: none
+
+/* adding id styles to separate Petition and Volunteer form backgrounds */
+#petition-form-entityform-edit-form
+  background: $petition-form-background-color image-url($petition-page-background) scroll no-repeat 0 0
+
+////////////////////////////////////////////
+// Page: volunteer
+/* adding id styles to separate Petition and Volunteer form backgrounds */
+#volunteer-entityform-edit-form, 
+form#contact-entityform-edit-form
+  background: $petition-form-background-color image-url($volunteer-page-background) scroll no-repeat 0 0
+
+.page-eform .entityform .form-submit
+  background: transparent image-url($form-button-submit) scroll 0 0
+.page-eform-submit-volunteer .entityform .form-submit
+  background: transparent image-url($volunteer-button-submit) scroll 0 0
+
+
+
+////////////////////////////////////////////
+// Footer styles
+footer#footer
+  background: $footer-background-color image-url($footer-background-image) scroll no-repeat 0 0
+
+////////////////////////////////////////////
+//Text capitalization correction
+#drawer-all-issues .view-issues-menu .views-row .views-field-name span a 
+  text-transform: none
+
+#drawer-next-issue .views-row .field-content a
+  text-transform: none
+
+////////////////////////////////////////////
+//Font icon centering

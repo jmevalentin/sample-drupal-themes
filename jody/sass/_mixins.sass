@@ -1,0 +1,129 @@
+@import settings
+
+%center 
+  text-align: center 
+@mixin center 
+  @extend %center
+
+%uppercase
+  text-transform: uppercase
+@mixin uppercase
+  @extend %uppercase
+  
+%bold
+  font-weight: bold
+  font-weight: 600
+@mixin bold
+  @extend %bold
+  
+%thin
+  font-weight: 100
+  font-weight: normal
+@mixin thin
+  @extend %thin
+  
+%byline
+  +uppercase
+  color: $color-byline
+  font-size: emCalc(10px)
+@mixin byline
+  @extend %byline
+  
+%readmore
+  +uppercase
+  +guardian-semibold
+  color: $color-link-readmore
+@mixin readmore
+  @extend %readmore
+
+%subtext
+  +maquette-medium-italic
+  color: $subtext
+@mixin subtext
+  @extend %subtext
+
+
+=content-box
+  +box-sizing(content-box)
+
+=border-box
+  +box-sizing(border-box)
+
+%relative
+  position: relative
+=relative
+  @extend %relative
+
+%absolute
+  position: absolute
+=absolute
+  @extend %absolute
+
+// Convert px to em
+@function em($number)
+  @return ($target / $font-size) * $number + em
+
+@function p($number) 
+  @return (($number/1200)*100%)
+
+=width($number)
+  width: p($number) 
+
+  
+=reset($type: all)
+  @if $type == all
+    margin: 0
+    padding: 0
+  @if $type == p
+    padding: 0
+  @if $type == m
+    margin: 0
+  @content
+
+=normal 
+  font-weight: normal
+  font-weight: 400
+
+// modernizr class and Sass content inject for fallback code
+=no-svg
+  .no-svg & 
+    @content
+    
+=issues-title
+  +guardian-semibold
+  color: $issues-taxonomy-font-color
+  display: inline-block
+  font-size: em(18)
+  letter-spacing: 1pt
+
+=socialmedia
+  ul
+    +no-bullets
+    +reset
+    li
+      +reset
+      margin-bottom: em(14)
+      a
+        +hide-text
+        background: image-url($deepdive-icon-social) scroll no-repeat 0 0
+        display: inline-block
+        height: em(77)
+        width: em(120)
+      &.email a
+        background-position: 0 0
+      &.facebook a
+        background-position: 0 -91px
+      &.twitter a
+        background-position: 0 -182px
+
+=subtitle-small
+  +guardian-semibold
+  +uppercase
+  color: #6cafdd
+  font-size: em(13)
+  letter-spacing: 2pt
+
+=subtitle-large
+  +guardian
+  font-size: em(33)
+  margin-bottom: em(10)
